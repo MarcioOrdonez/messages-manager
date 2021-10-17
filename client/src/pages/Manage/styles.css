@@ -1,0 +1,36 @@
+.main {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 97px);
+  background-color: #ecf4ff;
+}
+
+.message-table {
+  max-height: 700px;
+  overflow: auto;
+  display: grid;
+}
+
+.filter {
+  display: flex;
+  position: absolute;
+  margin-left: 45%;
+  height: 50px;
+  align-items: center;
+}
+
+.filter__button {
+  width: 50px;
+  height: 35px;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  margin-left: 10px;
+  background-color: #2f80ed;
+  border-radius: 8px;
+}
+
+.filter__input {
+  border-radius: 8px;
+  height: 30px;
+}

@@ -1,7 +1,8 @@
 import type { FC } from "react";
+import Routes from "./Routes";
 
 const App: FC = () => (
-  <div></div>
+  <Routes />
 );
 
 export default App;

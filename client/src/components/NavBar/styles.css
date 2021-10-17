@@ -1,0 +1,28 @@
+.nav-bar {
+  height: 40px;
+  width: calc(100vw - 44px);
+  background: linear-gradient(90deg, #085ec2 0%, #18b1f2 100%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.nav-bar__buttons {
+  display: flex;
+  float: right;
+  margin-right: 100px;
+}
+
+.nav-bar__manage-page {
+  background-color: #2f80ed;
+  width: 176px;
+  height: 44px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.nav-bar__view-page {
+  background-color: #00d1ff;
+  width: 176px;
+  height: 44px;
+  border-radius: 8px;
+}
