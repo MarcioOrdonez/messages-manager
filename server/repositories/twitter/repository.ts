@@ -1,5 +1,5 @@
 import { Filters, MessageRepository } from "../../domains/ports";
-import { twitterApi } from "./services";
+import twitterApi from "./services";
 
 export interface TwitterRule {
   id: string;

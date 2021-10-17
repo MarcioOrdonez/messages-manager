@@ -9,7 +9,7 @@ const RULESURL = process.env.TWITTER_RULE || "";
 const STREAMURL = process.env.TWITTER_STREAM || "";
 const TOKEN = process.env.TWITTER_TOKEN || "";
 
-export const twitterApi = {
+const twitterApi = {
   async setRules(filters: Filters): Promise<void> {
     const data = { add: filters };
     await needle("post", RULESURL, data, {
@@ -49,3 +49,5 @@ export const twitterApi = {
     return stream;
   },
 };
+
+export default twitterApi;
