@@ -5,9 +5,9 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const RULESURL = process.env.TWITTER_RULE;
-const STREAMURL = process.env.TWITTER_STREAM;
-const TOKEN = process.env.TWITTER_TOKEN;
+const RULESURL = process.env.TWITTER_RULE || "";
+const STREAMURL = process.env.TWITTER_STREAM || "";
+const TOKEN = process.env.TWITTER_TOKEN || "";
 
 export const twitterApi = {
   async setRules(filters: Filters): Promise<void> {

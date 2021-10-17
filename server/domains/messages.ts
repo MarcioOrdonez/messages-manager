@@ -4,6 +4,7 @@ interface Users {
   username: string;
 }
 export interface MessageData {
+  id: string;
   text: string;
   author_id: string;
   users: Users;
@@ -13,7 +14,12 @@ export class Message {
   private message: MessageData;
 
   constructor(data: MessageData) {
-    this.message = { text: data.text, author_id: data.author_id, users: data.users };
+    this.message = {
+      text: data.text,
+      author_id: data.author_id,
+      users: data.users,
+      id: data.id,
+    };
   }
 
   public getText(): string {
@@ -23,6 +29,7 @@ export class Message {
   public getAuthor(): string {
     return this.message.author_id;
   }
+
   public getUser(): Users {
     return this.message.users;
   }
