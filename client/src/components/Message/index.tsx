@@ -1,4 +1,4 @@
-import "./Message.css";
+import "./styles.css";
 import type { FC } from "react";
 import { MessageData } from "../../types/types";
 

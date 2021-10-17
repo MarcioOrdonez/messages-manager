@@ -1,5 +1,5 @@
-import { MessageData } from "../@types";
 import { Socket } from "socket.io-client";
+import { MessageData } from "../types/types";
 
 const server = "localhost:3001";
 

@@ -16,26 +16,18 @@ const Manage: FC = () => {
 
     const [messages, setMessages] = useState<Array<MessageData>>([]);
     const [filter, setFilter] = useState("");
-    
-    useEffect(() => {
-        socket = io.connect(server);
-      }, []);
-
 
     useEffect(() => {
-      if(!socket.connected){
-        socket = io.connect(server);
-      }
+        if(!socket.connected){
+          socket = io.connect(server);
+        }
           socket.on("connect", () => {
             let msg:Array<MessageData> = [];
             socket.on("manage_messages", (data) => {
-              console.log(data)
               if (data){
-                console.log(data)
                 const message = {
                   id: data.id, author_id: data.author_id, users: data.users, text: data.text
                 }
-                console.log(message);
                     msg = [...msg, message]
                     setMessages(msg);
               }
@@ -45,8 +37,6 @@ const Manage: FC = () => {
 
       const manageSendMessage = (socket: io.Socket, message: MessageData) => {
         sendMessage(socket,message);
-        console.log("mando a mensage")
-        return
       }
       
     return (

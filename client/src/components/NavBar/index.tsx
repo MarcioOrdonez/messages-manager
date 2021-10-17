@@ -1,4 +1,4 @@
-import "./NavBar.css";
+import "./styles.css";
 import type { FC } from "react";
 
 
