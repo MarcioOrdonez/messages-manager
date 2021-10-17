@@ -19,7 +19,6 @@ export class TwitterRepository implements MessageRepository {
   private async clearRules(): Promise<void> {
     const rules = await twitterApi.getRules();
     const ids = rules.map(({ id }: TwitterRule) => id);
-    console.log(ids);
     await twitterApi.clearRules(ids);
   }
 }
