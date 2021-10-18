@@ -9,12 +9,19 @@
 .nav-bar__buttons {
   display: flex;
   float: right;
+  text-align: center;
   margin-right: 100px;
+}
+
+Link {
+  color: white;
 }
 
 .nav-bar__manage-page {
   background-color: #2f80ed;
   width: 176px;
+  display: flex;
+  align-items: center;
   height: 44px;
   border-radius: 8px;
   margin-right: 20px;
@@ -22,6 +29,8 @@
 
 .nav-bar__view-page {
   background-color: #00d1ff;
+  display: flex;
+  align-items: center;
   width: 176px;
   height: 44px;
   border-radius: 8px;
